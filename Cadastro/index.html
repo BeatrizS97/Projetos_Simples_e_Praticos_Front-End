@@ -1,61 +1,58 @@
+<!-- Declaração do tipo de documento HTML5 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-    <!-- Define o conjunto de caracteres do documento -->
+    <!-- Define a codificação de caracteres -->
     <meta charset="UTF-8">
-
-    <!-- Garante que o site seja responsivo em dispositivos móveis -->
+    <!-- Define a largura da viewport para responsividade em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título da página que aparece na aba do navegador -->
-    <title>Cadastro</title>
-
-    <!-- Link para o arquivo de estilos CSS local -->
+    <!-- Título da página -->
+    <title>Formulário</title>
+    <!-- Link para o arquivo CSS principal -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Link para a biblioteca de ícones Font Awesome -->
+    <!-- Link para ícones da biblioteca Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <!-- Container para ícones (pode ser usado com canvas ou elementos visuais) -->
-    <div id="iconContainer"></canvas>
+    <!-- Container para ícones (pode ser usado dinamicamente via JS) -->
+    <div id="iconContainer"></div>
 
-        <!-- Formulário de cadastro com função JavaScript chamada ao enviar -->
-        <form id="myForm" onsubmit="handleSubmit(event)">
-            <fieldset>
-                <!-- Título do grupo de campos do formulário -->
-                <legend>Cadastro</legend>
+    <!-- Formulário de cadastro com evento onsubmit chamando função handleSubmit -->
+    <form id="myForm" onsubmit="handleSubmit(event)">
+        <!-- Agrupa campos do formulário com legend para identificação -->
+        <fieldset>
+            <legend>Cadastro</legend>
 
-                <!-- Campo de entrada para o nome completo -->
-                <label for="name">Nome Completo:</label>
-                <input type="text" id="name" placeholder="Digite seu nome" required>
-                <!-- Mensagem de erro para o campo nome -->
-                <div class="error-message" id="nameError">Por favor, insira um nome válido.</div>
+            <!-- Campo de entrada para o nome -->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
+            <!-- Mensagem de erro caso o nome seja inválido -->
+            <div class="error-message" id="nameError">Por favor, insira um nome válido.</div>
 
-                <!-- Campo de entrada para o email -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="exemplo@email.com" required>
-                <!-- Mensagem de erro para o campo email -->
-                <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
+            <!-- Campo de entrada para o email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="exemplo@email.com" required>
+            <!-- Mensagem de erro caso o email seja inválido -->
+            <div class="error-message" id="emailError">Por favor, insira um email válido.</div>
 
-                <!-- Campo de entrada para a senha -->
-                <label for="password">Senha:</label>
-                <input type="password" id="password" placeholder="Digite sua senha" required minlength="6">
-                <!-- Mensagem de erro para o campo senha -->
-                <div class="error-message" id="passwordError">A senha deve ter no mínimo 6 caracteres.</div>
+            <!-- Campo de entrada para a senha -->
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required minlength="6">
+            <!-- Mensagem de erro caso a senha seja muito curta -->
+            <div class="error-message" id="passwordError">A senha deve ter no mínimo 6 caracteres.</div>
 
-                <!-- Botão para enviar o formulário -->
-                <button type="submit">Cadastrar</button>
+            <!-- Botão de envio do formulário -->
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
 
-                <!-- Mensagem de sucesso exibida quando o cadastro é realizado corretamente -->
-                <div class="success-message" id="successMessage">Cadastro realizado com sucesso! Bem-vindo(a)!</div>
-            </fieldset>
-        </form>
+    <!-- Mensagem de sucesso após cadastro -->
+    <div class="success-notification" id="successMessage">Cadastro realizado com sucesso! Bem-vindo(a)!</div>
 
-        <!-- Link para o arquivo JavaScript que controla a lógica do formulário -->
-        <script src="script.js"></script>
+    <!-- Link para o arquivo JavaScript que gerencia validação e envio do formulário -->
+    <script src="script.js"></script>
 </body>
 
 </html>

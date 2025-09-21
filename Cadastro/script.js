@@ -1,10 +1,10 @@
 // Seleciona o container onde os ícones serão adicionados
 const iconContainer = document.getElementById('iconContainer');
 
-// Número total de ícones que aparecerão na tela
+// Define a quantidade total de ícones que aparecerão na tela
 const iconCount = 60;
 
-// Array com os ícones de programação (classe Font Awesome e nome)
+// Conjunto de ícones de programação e tecnologia, com classes do Font Awesome
 const iconSet = [
     { class: 'fa-brands fa-js', name: 'JavaScript' },
     { class: 'fa-brands fa-python', name: 'Python' },
@@ -18,67 +18,59 @@ const iconSet = [
     { class: 'fa-solid fa-code', name: 'TypeScript' }
 ];
 
-// Classe que cria e gerencia cada ícone animado
+// Classe que representa cada ícone animado na tela
 class ProgrammingIcon {
     constructor() {
-        // Cria um elemento <i> para o ícone
+        // Cria o elemento <i> para o ícone
         this.element = document.createElement('i');
 
         // Seleciona aleatoriamente um ícone do conjunto
         const iconData = iconSet[Math.floor(Math.random() * iconSet.length)];
 
-        // Define a classe do ícone (Font Awesome + classe customizada)
+        // Define a classe CSS e o ícone do Font Awesome
         this.element.className = `icon ${iconData.class}`;
 
-        // Define posição inicial aleatória dentro da tela
+        // Posição inicial aleatória dentro da janela
         this.element.style.left = `${Math.random() * (window.innerWidth - 30)}px`;
         this.element.style.top = `${Math.random() * (window.innerHeight - 30)}px`;
 
-        // Define velocidades aleatórias de movimento em X e Y
+        // Velocidade de movimento aleatória
         this.speedX = Math.random() * 0.4 - 0.2;
         this.speedY = Math.random() * 0.4 - 0.2;
 
-        // Define opacidade inicial aleatória
+        // Opacidade inicial aleatória
         this.opacity = Math.random() * 0.4 + 0.4;
         this.element.style.opacity = this.opacity;
 
-        // Flag para indicar se o ícone está "explodindo"
+        // Flag para verificar se o ícone está explodindo (efeito de partículas)
         this.isExploding = false;
 
         // Adiciona o ícone ao container
         iconContainer.appendChild(this.element);
 
-        // Evento de clique para criar efeito de fogos de artifício
+        // Evento de clique para criar efeito de "fogos de artifício"
         this.element.addEventListener('click', () => {
-            if (this.isExploding) return; // Evita múltiplas explosões simultâneas
+            if (this.isExploding) return; // evita múltiplos cliques simultâneos
             this.isExploding = true;
+            this.element.style.opacity = 0; // esconde o ícone durante a explosão
 
-            // Esconde o ícone durante a "explosão"
-            this.element.style.opacity = 0;
-
-            // Cria 8 partículas para efeito visual
+            // Cria 8 partículas ao redor do ícone
             for (let i = 0; i < 8; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
-
-                // Define direção e distância aleatória da partícula
                 const angle = Math.random() * 2 * Math.PI;
-                const distance = Math.random() * 30 + 20;
+                const distance = Math.random() * 30 + 20; // distância aleatória de 20-50px
                 particle.style.setProperty('--tx', `${Math.cos(angle) * distance}px`);
                 particle.style.setProperty('--ty', `${Math.sin(angle) * distance}px`);
-
-                // Posição inicial da partícula igual à do ícone
                 particle.style.left = this.element.style.left;
                 particle.style.top = this.element.style.top;
-
-                // Adiciona a partícula ao container
                 iconContainer.appendChild(particle);
 
                 // Remove a partícula após 500ms (fim da animação)
                 setTimeout(() => particle.remove(), 500);
             }
 
-            // Restaura o ícone após a animação das partículas
+            // Restaura o ícone após a animação de partículas
             setTimeout(() => {
                 this.element.style.opacity = this.opacity;
                 this.isExploding = false;
@@ -86,42 +78,40 @@ class ProgrammingIcon {
         });
     }
 
-    // Atualiza a posição e opacidade do ícone a cada frame
+    // Atualiza posição e opacidade do ícone a cada frame
     update() {
-        if (this.isExploding) return;
+        if (this.isExploding) return; // não movimenta ícone durante explosão
 
         let x = parseFloat(this.element.style.left);
         let y = parseFloat(this.element.style.top);
-
-        // Atualiza a posição com base na velocidade
         x += this.speedX;
         y += this.speedY;
 
-        // Faz a opacidade variar levemente
+        // Opacidade diminui levemente ao longo do tempo
         this.opacity = Math.max(0.4, this.opacity - 0.002 * Math.random());
 
-        // Reverte a direção se atingir borda da tela
+        // Inverte a direção se atingir bordas da janela
         if (x < 0 || x > window.innerWidth - 30) this.speedX *= -1;
         if (y < 0 || y > window.innerHeight - 30) this.speedY *= -1;
 
-        // Mantém a opacidade dentro do intervalo permitido
+        // Garante que a opacidade mínima seja 0.4
         if (this.opacity < 0.4) this.opacity = Math.random() * 0.4 + 0.4;
 
-        // Atualiza a posição e opacidade no DOM
+        // Aplica novas posições e opacidade
         this.element.style.left = `${x}px`;
         this.element.style.top = `${y}px`;
         this.element.style.opacity = this.opacity;
     }
 }
 
-// Função que inicializa todos os ícones
+// Inicializa todos os ícones na tela
 function initIcons() {
     for (let i = 0; i < iconCount; i++) {
         icons.push(new ProgrammingIcon());
     }
 }
 
-// Função que anima todos os ícones continuamente
+// Função de animação contínua usando requestAnimationFrame
 function animateIcons() {
     icons.forEach(icon => icon.update());
     requestAnimationFrame(animateIcons);
@@ -129,10 +119,10 @@ function animateIcons() {
 
 // Array que armazenará todos os ícones
 const icons = [];
-initIcons();        // Cria os ícones
-animateIcons();     // Inicia a animação
+initIcons();
+animateIcons();
 
-// Ajusta a posição dos ícones quando a janela é redimensionada
+// Ajusta posições dos ícones quando a janela é redimensionada
 window.addEventListener('resize', () => {
     icons.forEach(icon => {
         let x = parseFloat(icon.element.style.left);
@@ -142,19 +132,20 @@ window.addEventListener('resize', () => {
     });
 });
 
+// ============================
+// Formulário - Validação e Envio
+// ============================
 
-// ===================== FORMULÁRIO =====================
-
-// Função que trata o envio do formulário
+// Função que gerencia o envio do formulário
 function handleSubmit(event) {
-    event.preventDefault(); // Evita o envio padrão do formulário
+    event.preventDefault(); // impede envio padrão do formulário
 
-    // Captura os valores dos campos
+    // Seleciona os valores dos campos
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    // Seleciona os elementos de erro e sucesso
+    // Seleciona elementos de erro e sucesso
     const nameError = document.getElementById('nameError');
     const emailError = document.getElementById('emailError');
     const passwordError = document.getElementById('passwordError');
@@ -162,11 +153,10 @@ function handleSubmit(event) {
 
     let isValid = true;
 
-    // Reset das mensagens de erro e sucesso
+    // Reseta mensagens de erro e sucesso
     nameError.style.display = 'none';
     emailError.style.display = 'none';
     passwordError.style.display = 'none';
-    successMessage.style.display = 'none';
     nameError.classList.remove('show');
     emailError.classList.remove('show');
     passwordError.classList.remove('show');
@@ -193,23 +183,22 @@ function handleSubmit(event) {
         isValid = false;
     }
 
-    // Se todos os campos forem válidos, exibe mensagem de sucesso
+    // Se todos os campos forem válidos
     if (isValid) {
-        successMessage.style.display = 'block';
         successMessage.classList.add('show');
-        document.getElementById('myForm').reset(); // Limpa o formulário
-
-        // Remove a mensagem de sucesso após 4 segundos
+        document.getElementById('myForm').reset(); // reseta o formulário
+        // Remove mensagem de sucesso após 4 segundos
         setTimeout(() => {
             successMessage.classList.remove('show');
-            successMessage.style.display = 'none';
         }, 4000);
     }
 }
 
-// ===================== VALIDAÇÃO EM TEMPO REAL =====================
+// ============================
+// Validação em tempo real
+// ============================
 
-// Validação do campo nome enquanto o usuário digita
+// Validação em tempo real do campo nome
 document.getElementById('name').addEventListener('input', function () {
     const nameError = document.getElementById('nameError');
     if (this.value.trim() === '') {
@@ -221,7 +210,7 @@ document.getElementById('name').addEventListener('input', function () {
     }
 });
 
-// Validação do campo email enquanto o usuário digita
+// Validação em tempo real do campo email
 document.getElementById('email').addEventListener('input', function () {
     const emailError = document.getElementById('emailError');
     if (!this.value.includes('@') || this.value.trim() === '') {
@@ -233,7 +222,7 @@ document.getElementById('email').addEventListener('input', function () {
     }
 });
 
-// Validação do campo senha enquanto o usuário digita
+// Validação em tempo real do campo senha
 document.getElementById('password').addEventListener('input', function () {
     const passwordError = document.getElementById('passwordError');
     if (this.value.length < 6) {
