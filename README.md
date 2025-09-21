@@ -7,14 +7,14 @@
 
 ## 📝 Projeto 1: Tela de Cadastro
 
-Este é o **primeiro projeto** do repositório, criado durante a **segunda semana** do curso.  
+Este é o **primeiro projeto**, criado durante a **segunda semana** do curso.  
 O objetivo foi desenvolver uma **tela de cadastro funcional e clean**, aplicando HTML, CSS e JavaScript básico.
 
-![Tela de Cadastro](https://i.imgur.com/3U5Zr9g.png) <!-- Substitua pelo print do seu projeto -->
+![Tela de Cadastro](imagem/cadastro.png)
 
 ### 💡 Funcionalidades
 
-- 🧾 Formulário de cadastro com campos: **nome, e-mail e senha**
+- 🧾 Formulário de cadastro: **nome, e-mail, senha**
 - ✅ Validação simples de preenchimento
 - 📱 Layout responsivo e moderno
 - 🛠️ Estrutura organizada para facilitar futuras implementações
@@ -33,5 +33,7 @@ O objetivo foi desenvolver uma **tela de cadastro funcional e clean**, aplicando
 
 1. Clone o repositório:
    ```bash
+   git clone https://github.com/seu-usuario/Projetos_Simples_e_Praticos_Front-End.git
+
    git clone https://github.com/seu-usuario/Projetos_Simples_e_Praticos_Front-End.git
 
