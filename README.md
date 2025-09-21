@@ -10,7 +10,7 @@
 Este é o **primeiro projeto**, criado durante a **segunda semana** do curso.  
 O objetivo foi desenvolver uma **tela de cadastro funcional e clean**, aplicando HTML, CSS e JavaScript básico.
 
-![Tela de Cadastro](imagem/cadastro.png)
+![Tela de Cadastro](./imagem/cadastro.png)
 
 ### 💡 Funcionalidades
 
