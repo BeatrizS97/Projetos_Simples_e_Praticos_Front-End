@@ -15,13 +15,13 @@ efeitos de <b>animação CSS</b> e ícones de linguagens de programação que ex
 
 ## ✨ Funcionalidades
 
-✔️ Campos de **Nome, Email e Senha**  
-✔️ **Validação em tempo real** com mensagens animadas  
-✔️ **Notificação de sucesso estilizada**  
-✔️ Ícones de linguagens **(JS, Python, HTML, CSS, PHP, Java, SQL, Go, Ruby, TS)**  
-✔️ Efeito de **fogos de artifício nos ícones**  
-✔️ **Gradiente animado** de fundo (roxos + rosé)  
-✔️ **Layout responsivo** para desktop e mobile  
+✔ Campos de **Nome, Email e Senha**  
+✔ **Validação em tempo real** com mensagens animadas  
+✔ **Notificação de sucesso estilizada**  
+✔ Ícones de linguagens **(JS, Python, HTML, CSS, PHP, Java, SQL, Go, Ruby, TS)**  
+✔ Efeito de **fogos de artifício nos ícones**  
+✔ **Gradiente animado** de fundo (roxos + rosé)  
+✔ **Layout responsivo** para desktop e mobile  
 
 ---
 
@@ -59,6 +59,8 @@ git clone https://github.com/seu-usuario/Projetos_Simples_e_Praticos_Front-End.g
 cd Projetos_Simples_e_Praticos_Front-End
 
 # Abra o index.html no navegador
+```
+---
 
 📸 Demonstração
 <p align="center"> <img src="print-da-page.png" alt="Demonstração do Formulário" width="400"/> </p>
@@ -86,3 +88,4 @@ Feito com 💖 por Beatriz Silva Santos
 
 <p align="center"> <a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-5b21b6?style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-a855f7?style=for-the-badge&logo=linkedin&logoColor=white"/></a> </p>
 <h3 align="center">✨ Este projeto é perfeito para praticar <b>front-end moderno</b> e criar experiências <b>visualmente incríveis</b>!</h3>
+
