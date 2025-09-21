@@ -35,5 +35,13 @@ O objetivo foi desenvolver uma **tela de cadastro funcional e clean**, aplicando
    ```bash
    git clone https://github.com/seu-usuario/Projetos_Simples_e_Praticos_Front-End.git
 
-   git clone https://github.com/seu-usuario/Projetos_Simples_e_Praticos_Front-End.git
+   git clone https://github.com/seu-usuario/Projetos_Simples_e_Praticos_Front-End.git```
 
+---
+
+📌 Autor
+
+Feito com 💖 por Beatriz Silva Santos
+
+<p align="center"> <a href="https://github.com/BeatrizS97"><img src="https://img.shields.io/badge/GitHub-5b21b6?style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/beatriz-silva-santos-419339235/"><img src="https://img.shields.io/badge/LinkedIn-a855f7?style=for-the-badge&logo=linkedin&logoColor=white"/></a> </p>
+<h3 align="center">✨ Este projeto é perfeito para praticar <b>front-end moderno</b> e criar experiências <b>visualmente incríveis</b>!</h3>
