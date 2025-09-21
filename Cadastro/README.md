@@ -1,4 +1,4 @@
-<h1 align="center">🎨 Formulário Animado com Ícones de Programação</h1>
+<h1 align="center">🎨 Cadastro Animado com Ícones de Programação</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-ec4899?style=for-the-badge&logo=html5&logoColor=white"/>
@@ -88,4 +88,5 @@ Feito com 💖 por Beatriz Silva Santos
 
 <p align="center"> <a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-5b21b6?style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-a855f7?style=for-the-badge&logo=linkedin&logoColor=white"/></a> </p>
 <h3 align="center">✨ Este projeto é perfeito para praticar <b>front-end moderno</b> e criar experiências <b>visualmente incríveis</b>!</h3>
+
 
