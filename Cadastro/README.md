@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">  
-Um <b>formulário moderno e interativo</b>, com <b>validação em tempo real</b>,  
+Um <b>cadastro moderno e interativo</b>, com <b>validação em tempo real</b>,  
 efeitos de <b>animação CSS</b> e ícones de linguagens de programação que explodem como fogos de artifício ao clique.  
 </p>
 
@@ -15,13 +15,13 @@ efeitos de <b>animação CSS</b> e ícones de linguagens de programação que ex
 
 ## ✨ Funcionalidades
 
-✔ Campos de **Nome, Email e Senha**  
-✔ **Validação em tempo real** com mensagens animadas  
-✔ **Notificação de sucesso estilizada**  
-✔ Ícones de linguagens **(JS, Python, HTML, CSS, PHP, Java, SQL, Go, Ruby, TS)**  
-✔ Efeito de **fogos de artifício nos ícones**  
-✔ **Gradiente animado** de fundo (roxos + rosé)  
-✔ **Layout responsivo** para desktop e mobile  
+- Campos de **Nome, Email e Senha**  
+- **Validação em tempo real** com mensagens animadas  
+- **Notificação de sucesso estilizada**  
+- Ícones de linguagens **(JS, Python, HTML, CSS, PHP, Java, SQL, Go, Ruby, TS)**  
+- Efeito de **fogos de artifício nos ícones**  
+- **Gradiente animado** de fundo (roxos + rosé)  
+- **Layout responsivo** para desktop e mobile  
 
 ---
 
@@ -86,7 +86,8 @@ Projetos_Simples_e_Praticos_Front-End/
 
 Feito com 💖 por Beatriz Silva Santos
 
-<p align="center"> <a href="https://github.com/"><img src="https://img.shields.io/badge/GitHub-5b21b6?style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-a855f7?style=for-the-badge&logo=linkedin&logoColor=white"/></a> </p>
+<p align="center"> <a href="https://github.com/BeatrizS97"><img src="https://img.shields.io/badge/GitHub-5b21b6?style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/beatriz-silva-santos-419339235/"><img src="https://img.shields.io/badge/LinkedIn-a855f7?style=for-the-badge&logo=linkedin&logoColor=white"/></a> </p>
 <h3 align="center">✨ Este projeto é perfeito para praticar <b>front-end moderno</b> e criar experiências <b>visualmente incríveis</b>!</h3>
+
 
 
