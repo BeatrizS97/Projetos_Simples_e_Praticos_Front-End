@@ -50,23 +50,6 @@ O **Humormômetro** é uma aplicação web que ajuda você a entender melhor seu
 - **🌈 Feedback Visual**: Cada emoção tem cores e gradientes únicos
 - **🎁 Easter Egg Secreto**: Descubra surpresas escondidas! (Dica: clique 3x no emoji)
 
-### 🎭 Estados Emocionais Disponíveis
-
-| Emoção | Emoji | Nível |
-|--------|-------|-------|
-| Radiante | 🤩 | Muito Positivo |
-| Animado | 😄 | Positivo |
-| Feliz | 😊 | Positivo |
-| Confiante | 😎 | Positivo |
-| Grato | 🙏 | Positivo |
-| Calmo | 😌 | Neutro-Positivo |
-| Pensativo | 🤔 | Neutro |
-| Neutro | 😐 | Neutro |
-| Estressado | 😤 | Neutro-Negativo |
-| Cansado | 😪 | Negativo |
-| Preocupado | 😟 | Negativo |
-| Triste | 😢 | Muito Negativo |
-
 ### 🛠️ Tecnologias Utilizadas
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -84,14 +67,6 @@ O **Humormômetro** é uma aplicação web que ajuda você a entender melhor seu
 - **Glassmorphism**: Efeitos de vidro fosco modernos
 - **JavaScript ES6+**: Arrow functions, template literals, async/await
 
-### 🎮 Interações Especiais
-
-- ✨ **Partículas animadas** ao interagir com elementos
-- 🎉 **Efeito confete** em momentos especiais
-- 🖱️ **Parallax 3D** que acompanha o movimento do mouse
-- 🌊 **Formas flutuantes** animadas no background
-- 💫 **Transições suaves** entre estados
-
 ### 📊 Sistema Inteligente
 
 O Humormômetro possui um sistema de pontuação (1-12) que calcula:
@@ -99,20 +74,7 @@ O Humormômetro possui um sistema de pontuação (1-12) que calcula:
 - **Tendências emocionais** (melhorando/piorando)
 - **Padrões semanais e mensais**
 - **Emoção mais frequente** com estatísticas detalhadas
-
-### 📁 Estrutura do Projeto
-
-```
-humorometro/
-│
-├── index.html          # Estrutura HTML semântica
-├── css/
-│   └── styles.css      # Estilos SCSS compilados
-├── js/
-│   └── script.js       # Lógica JavaScript (800+ linhas comentadas)
-└── README.md           # Documentação completa
-```
-
+  
 ---
 
 ## 🚀 Como Executar os Projetos
