@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> <!-- Suporte a acentuação e emojis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Layout responsivo -->
+    <title>Humormômetro</title> <!-- Título da aba -->
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Estilos visuais da página -->
+</head>
+
+<body>
+    <!-- Formas flutuantes decorativas no fundo -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+
+    <!-- Modal exibido ao escolher um humor -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container" id="modalContainer">
+            <div class="modal-emoji" id="modalEmoji">💭</div> <!-- Emoji do humor -->
+            <p class="modal-message" id="modalMessage"></p> <!-- Mensagem personalizada -->
+            <button class="modal-close" id="modalClose">Entendi! ✨</button> <!-- Fecha o modal -->
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main class="container" id="mainContainer">
+        <div class="card-shine"></div> <!-- Brilho decorativo no topo -->
+
+        <!-- Emoji principal -->
+        <div class="emoji-header">
+            <div class="emoji-circle">
+                <span class="emoji-large" id="emojiDisplay">💭</span>
+            </div>
+        </div>
+
+        <h1>Como você está se sentindo hoje?</h1>
+        <p class="subtitle">Compartilhe seu humor conosco</p>
+
+        <!-- Seleção de humor -->
+        <div class="select-container">
+            <select id="humor">
+                <option value="">Selecione uma opção...</option>
+                <option value="radiante">🤩 Radiante</option>
+                <option value="feliz">😊 Feliz</option>
+                <option value="animado">😄 Animado</option>
+                <option value="grato">🙏 Grato</option>
+                <option value="confiante">😎 Confiante</option>
+                <option value="calmo">😌 Calmo</option>
+                <option value="neutro">😐 Neutro</option>
+                <option value="pensativo">🤔 Pensativo</option>
+                <option value="cansado">😪 Cansado</option>
+                <option value="preocupado">😟 Preocupado</option>
+                <option value="triste">😢 Triste</option>
+                <option value="estressado">😤 Estressado</option>
+            </select>
+            <div class="select-arrow">▼</div> <!-- Seta customizada -->
+        </div>
+
+        <!-- Botões de ação -->
+        <div class="button-container">
+            <button id="btnMostrar" class="btn btn-primary">
+                <span class="btn-content">
+                    <span class="btn-icon">✨</span>
+                    <span class="btn-text">Mostrar Mensagem</span>
+                </span>
+                <div class="btn-shine"></div>
+            </button>
+
+            <button id="btnReset" class="btn btn-secondary">
+                <span class="btn-content">
+                    <span class="btn-icon">🔄</span>
+                    <span class="btn-text">Resetar</span>
+                </span>
+            </button>
+        </div>
+
+        <!-- Gráfico de histórico emocional -->
+        <div class="chart-section" id="chartSection">
+            <div class="chart-header">
+                <h2>📊 Seu Histórico Emocional</h2>
+                <div class="chart-tabs">
+                    <button class="chart-tab active" data-period="week">Semana</button>
+                    <button class="chart-tab" data-period="month">Mês</button>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="emotionChart"></canvas> <!-- Gráfico do Chart.js -->
+            </div>
+
+            <div class="chart-stats" id="chartStats"></div> <!-- Estatísticas complementares -->
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <p>✨ Cuide da sua saúde mental ✨</p>
+        </div>
+    </main>
+
+    <!-- Biblioteca de gráficos e script principal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <!-- Gera o gráfico -->
+    <script src="./js/script.js"></script> <!-- Lógica da página -->
+</body>
+
+</html>
