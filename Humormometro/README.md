@@ -214,7 +214,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 👨‍💻 Autor
 
-Desenvolvido com 💜 e muita dedicação
+Desenvolvido por Beatriz Silva com 💜 e muita dedicação
 
 <div align="center">
 
@@ -224,7 +224,7 @@ Desenvolvido com 💜 e muita dedicação
 
 ---
 
-<sub>Construído com HTML, CSS, JavaScript e Chart.js | © 2025 Humormômetro</sub>
+<sub>Construído com HTML, CSS, JavaScript e Chart.js | **© 2025 Humormômetro | Beatriz Silva Santos | Todos os direitos reservados**</sub>
 
 </div>
 
